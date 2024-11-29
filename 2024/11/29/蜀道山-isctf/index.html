@@ -170,11 +170,9 @@
     </div>
     
     <div class="content" v-pre>
-        <p>出题加测题</p>
-<p>ps: 星盟安全团队密码纳新</p>
+        <p>出题加测题<br>ps: 星盟安全团队密码纳新</p>
 <span id="more"></span>
-
-<h1 id="蜀道山-isctf"><a href="#蜀道山-isctf" class="headerlink" title="蜀道山 &amp; isctf"></a>蜀道山 &amp; isctf</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在比赛前几天被拉去出道简单的密码题，然后顺便帮adwa和wbuildings师傅演了个题，就各验了一个，adwa剩下的两篇论文没做出来，然后在后面放一道isctf我出的那一道简单题吧。</p>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在比赛前几天被拉去出道简单的密码题，然后顺便帮adwa和wbuildings师傅演了个题，就各验了一个，adwa剩下的两篇论文没做出来，然后在后面放一道isctf我出的那一道简单题吧。</p>
 <p>ps：星盟安全团队密码招新</p>
 <h2 id="蜀道山-Crypto"><a href="#蜀道山-Crypto" class="headerlink" title="蜀道山-Crypto"></a>蜀道山-Crypto</h2><h3 id="xorrsa"><a href="#xorrsa" class="headerlink" title="xorrsa"></a>xorrsa</h3><pre><code>from Crypto.Util.number import *
 from gmpy2 import *
@@ -586,7 +584,7 @@ for i in range(2000):
         q=iroot((n // x), 4)[0]
         d=inverse(65537,(x-1)*(q-1)*q3)
         s=int(pow(c1,d,n))
-**        m=((c-1)//s**3)%s
+        m=((c-1)//s**3)%s
         print(long_to_bytes(m))
         m1=long_to_bytes(m)
         break
